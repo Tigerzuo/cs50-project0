@@ -1,0 +1,48 @@
+$ol_color: red;
+h1 {text-align: center;}
+
+.repair:after {
+    content: " repair";
+}
+.center {
+    text-align: center;
+    list-style-position: inside;
+}
+.left {
+    text-align: left;
+    list-style-position: inside;
+}
+.footer:after {
+    content: url(index.html);
+}
+div {
+    ol {
+        color: $ol_color;
+    }
+}
+
+#table {
+    background-color: lightgoldenrodyellow;
+}
+
+%message {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.red {
+    @extend %message;
+    background-color: red;
+}
+.blue {
+    @extend %message;
+    background-color: blue;
+}
+.green {
+    @extend %message;
+    background-color: green;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<style>
+			@media (min-width: 500px) {
+				h1::before {
+					content: "Media changed!";
+					background-color: red;
+				}
+			}
+			@media (min-width: 501px) {
+				h1::before {
+					content: "";
+				}
+			}
+		</style>
+		<title>Tiger's Repair</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+    <body>
+
+
+		<h1 >Welcome to Tiger's repair website! It will contain some nessary infomation to help you repair your broken electronics.</h1>
+		<div class="container">
+			<p class="center" >Prices for basic repair</p>
+			<div class="row justify-content-center">
+				<ol class="justify-content-left pr-5">
+					<li><a class="repair" href="Cellphone.html">Cell Phone</a></li>
+					<li><a class="repair" href="Laptop.html">Laptop</a></li>
+					<li><a class="repair" href="Desktop.html">Desktop</a></li>
+				</ol>
+		  </div>
+    </body>
+</html>
